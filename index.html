@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ايكو مرج للتسويق الإلكتروني وبيع المنتجات عبر الانترنت</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #FF6B35 0%, #00A896 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1rem;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .company-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .tagline {
+            font-size: 1rem;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+        
+        nav {
+            background-color: #2c3e50;
+            padding: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0;
+        }
+        
+        nav ul li {
+            margin: 0;
+        }
+        
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background-color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #FF6B35;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.9), rgba(0, 168, 150, 0.9)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .content {
+            padding: 60px 20px;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-card h3 {
+            color: #FF6B35;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #FF6B35 0%, #00A896 100%);
+            color: white;
+            padding: 50px 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .contact-item h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-item a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #FF6B35;
+        }
+        
+        @media (max-width: 768px) {
+            .company-name {
+                font-size: 1.3rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li a {
+                padding: 12px 20px;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="logo.png" alt="ايكو مرج للتسويق الإلكتروني" class="logo">
+                <div>
+                    <div class="company-name">ايكو مرج للتسويق الإلكتروني وبيع المنتجات عبر الانترنت</div>
+                    <div class="tagline">شريكك في النجاح الرقمي وتنمية أعمالك عبر الإنترنت</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="privacy.html">سياسة الخصوصية</a></li>
+            <li><a href="terms.html">شروط الاستخدام</a></li>
+            <li><a href="refund.html">سياسة الاسترجاع</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>مرحباً بك في ايكو مرج للتسويق الإلكتروني وبيع المنتجات عبر الانترنت</h1>
+            <p>نحن متخصصون في تقديم حلول التسويق الإلكتروني المتكاملة وبيع المنتجات عبر الإنترنت. نساعد الشركات والأفراد على النمو والنجاح في عالم التجارة الإلكترونية من خلال استراتيجيات مبتكرة وفعالة.</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px; font-size: 2rem;">خدماتنا</h2>
+            
+            <div class="services">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>التسويق عبر وسائل التواصل الاجتماعي</h3>
+                    <p>إدارة احترافية لحساباتك على منصات التواصل الاجتماعي مع استراتيجيات تسويقية مبتكرة لزيادة التفاعل والوصول إلى جمهورك المستهدف.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🛒</div>
+                    <h3>التجارة الإلكترونية</h3>
+                    <p>حلول متكاملة لبيع المنتجات عبر الإنترنت، من إنشاء المتاجر الإلكترونية إلى إدارة المخزون والشحن وخدمة العملاء.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>التحليلات والتقارير</h3>
+                    <p>تحليل شامل لأداء حملاتك التسويقية وتقديم تقارير مفصلة تساعدك على اتخاذ قرارات مستنيرة لتحسين نتائجك.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>الإعلانات المدفوعة</h3>
+                    <p>إدارة احترافية للحملات الإعلانية المدفوعة على جوجل وفيسبوك وإنستجرام ومنصات أخرى لتحقيق أفضل عائد على الاستثمار.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">✍️</div>
+                    <h3>كتابة المحتوى</h3>
+                    <p>محتوى تسويقي إبداعي وجذاب يعكس هوية علامتك التجارية ويجذب العملاء المحتملين ويحفزهم على اتخاذ الإجراء المطلوب.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>التصميم الجرافيكي</h3>
+                    <p>تصاميم احترافية ومبتكرة للمنشورات والإعلانات والهوية البصرية التي تميز علامتك التجارية في السوق الرقمي.</p>
+                </div>
+            </div>
+            
+            <div class="contact-section">
+                <h2>📞 تواصل معنا</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📧 البريد الإلكتروني:</h3>
+                        <a href="mailto:admin@ecomerg.academy">admin@ecomerg.academy</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>💬 WhatsApp:</h3>
+                        <a href="https://wa.me/96566355778">+965 66355778</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>💬 WhatsApp:</h3>
+                        <a href="https://wa.me/96565612377">+965 65612377</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="contact.html">اتصل بنا</a>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <a href="terms.html">شروط الاستخدام</a>
+                <a href="refund.html">سياسة الاسترجاع</a>
+            </div>
+            <p>&copy; 2024 ايكو مرج للتسويق الإلكتروني وبيع المنتجات عبر الانترنت. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
